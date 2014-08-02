@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:NS1="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Seq RDF:about="rdf:#$lUEmp2">
+    <RDF:li RDF:resource="rdf:#$mUEmp2"/>
+  </RDF:Seq>
+  <RDF:Description RDF:about="rdf:#$pUEmp2"
+                   NS1:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   NS1:minVersion="2.0"
+                   NS1:maxVersion="3.5+"
+                   NS1:updateLink="http://fangs.sourceforge.net/fangs.xpi" />
+  <RDF:Description RDF:about="urn:mozilla:extension:{21D01944-2878-4eb3-A72A-83E8D1E6D4A6}"
+                   NS1:version="1.0.5"
+                   NS1:updateLink="http://fangs.sourceforge.net/fangs.xpi"
+                   NS1:signature="MIGTMA0GCSqGSIb3DQEBDQUAA4GBAKIyL3XGXUo54I1YF0Ky0xe0PK3WPkmPUMrYgYbeJfMFsC6KXThUFwr12h9S7UedpXqxpnNmavqJMKD59DuBpX1NZZE8LECM4PQlrdAB7bb0duruGEDQSVE/qugcQrlTlJGiaXTxzUXJOLztmtyQxQAFomjN7E18USFpulxvNg5A">
+    <NS1:updates RDF:resource="rdf:#$lUEmp2"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="rdf:#$mUEmp2"
+                   NS1:version="1.0.5">
+    <NS1:targetApplication RDF:resource="rdf:#$pUEmp2"/>
+  </RDF:Description>
+</RDF:RDF>

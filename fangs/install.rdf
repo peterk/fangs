@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <RDF:Description RDF:about="urn:mozilla:install-manifest"
+                   em:id="{21D01944-2878-4eb3-A72A-83E8D1E6D4A6}"
+                   em:name="Fangs"
+                   em:version="1.0.8"
+                   em:creator="Peter Krantz"
+                   em:description="Renders a text version of a web page similar to screen reader output."
+                   em:homepageURL="http://www.standards-schmandards.com/fangs"
+                   em:iconURL="chrome://fangs/skin/fangslogo_32.png"
+                   em:optionsURL="chrome://fangs/content/settings.xul"
+                   em:aboutURL="chrome://fangs/content/about.xul">
+    <em:targetApplication RDF:resource="rdf:#$Co0cc1"/>
+    <em:file RDF:resource="urn:mozilla:extension:file:"/>
+  </RDF:Description>
+  <RDF:Description RDF:about="urn:mozilla:extension:file:"
+                   em:locale="locale/en-US/" />
+  <RDF:Description RDF:about="rdf:#$Co0cc1"
+                   em:id="{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+                   em:minVersion="2.0"
+                   em:maxVersion="4.0b2pre" />
+</RDF:RDF>

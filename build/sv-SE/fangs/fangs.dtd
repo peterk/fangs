@@ -1,0 +1,10 @@
+<!ENTITY mainWindow.title "Fangs">
+<!ENTITY mainWindow.outputfor "Vy av:">
+<!ENTITY mainWindow.btnReload "Ladda om">
+<!ENTITY mainWindow.helptext "Hjälp och information">
+<!ENTITY mainWindow.subtitle "">
+<!ENTITY mainWindow.tab1 "Skärmläsaroutput">
+<!ENTITY mainWindow.tab2 "Rubrikförteckning">
+<!ENTITY mainWindow.tab2.title "Rubrikförteckning">
+<!ENTITY mainWindow.tab3 "Länkförteckning">
+<!ENTITY mainWindow.tab3.title "Länkförteckning">

@@ -1,0 +1,82 @@
+<html >
+<head>
+<title>Formxs 2</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+<h1>Test page: Forms 3 - Title attributes on labels an form elements</h1>
+<form action="Forms1.htm" method="post" enctype="multipart/form-data">
+  <h2>Simple form</h2>
+  <p> 
+    Name:
+    <input name="tbName" type="text" id="tbName" size="30" maxlength="30" >
+    <input type="submit" name="Submit" value="Click to submit" />
+  </p>
+  <h2>Simple form with access keys</h2>
+  <p> 
+    <label for="tbName2" title="*name label title*">Name:</label>
+    <input name="tbName2" title="*name2 field title*" type="text" id="tbName2" size="30" maxlength="30" accesskey="n"/>
+    <input type="submit" name="Submit" title="*submit button title*" value="Click to submit" accesskey="c" />
+  </p>
+  <h2>Simple form with accesskeys and pre-filled content</h2>
+  <p>
+    <label for="tbName3">Name:</label>
+    <input name="tbName3" type="text" id="tbName3" accesskey="n" value="Content" size="30" maxlength="30"/>
+    <input type="submit" name="Submit" value="Click to submit" accesskey="c" />
+  </p>
+  <h2>Various form elements</h2>
+  <ul>
+    <li>Text field: 
+      <input type="text" name="tbTextfield" />
+    </li>
+    <li> Text area: 
+      <textarea name="taTextArea"></textarea>
+    </li>
+    <li> Button: 
+      <input name="btnButton" type="button" id="btnButton" value="The label" />
+    </li>
+    <li> Checkbox:<br />
+      <input type="checkbox" name="checkbox" value="checkbox" title="*check box title*">
+      First value</input> 
+      <input name="checkbox" type="checkbox" value="checkbox" checked="checked">
+      Second value</input> 
+      <input type="checkbox" name="checkbox" value="checkbox">
+      Third value</input> </li>
+    <li> Radiobutton:<br />
+      <input type="radio" name="radiobutton" value="thevalue" title="*first radio button title*">
+      First option</input> 
+      <input name="radiobutton" type="radio" value="thevalue" checked="checked" >
+      Second option</input> 
+      <input type="radio" name="radiobutton" value="thevalue" title="*third radio button title*">
+      Third option</input> </li>
+    <li> Dropdown list:<br />
+      <select name="select" title="*select title*">
+        <option value="1" title="*first option title*">First item</option>
+        <option value="2" selected="selected">Second Item</option>
+        <option value="3">Third Item</option>
+      </select>
+    </li>
+    <li> Select file field:<br />
+      <input type="file" name="file" title="*file field title*" />
+    </li>
+  </ul>
+  <h2>Fieldsets</h2>
+    <fieldset title="*address fieldset title*"><legend>Address area</legend>
+    <label for="tbAddr">Address:</label>
+    <input name="tbAddr" type="text" id="tbAddr" size="30" maxlength="30" />	
+	</fieldset>
+    <fieldset><legend>City area</legend>
+    <label for="tbCity">City:</label>
+    
+  <p>
+    <input name="tbCity" type="text" id="tbCity" size="30" maxlength="30" />
+    <input type="submit" name="Submit" value="Click to submit" />
+  </p>
+  <h2>Alternative label style (enclosing input element)</h2>
+    <label>My label:
+    <input name="tbName2" type="text" id="tbName2" size="30" maxlength="30" accesskey="n"/></label>
+  </fieldset>	
+</form>
+</body>
+</html>

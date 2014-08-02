@@ -1,0 +1,5 @@
+<!ENTITY aboutWindow.title 		"Om Fangs">
+<!ENTITY aboutWindow.createdby 	"Skapad av:">
+<!ENTITY aboutWindow.homepage 	"Webbsida:">
+<!ENTITY aboutWindow.license 	"Detta program är licensierat som GPL. Mer information finns i källkodsfilerna.">
+<!ENTITY aboutWindow.contributors "Med stöd av:">

@@ -1,0 +1,5 @@
+<!ENTITY aboutWindow.title 		"About Fangs">
+<!ENTITY aboutWindow.createdby 	"Created By:">
+<!ENTITY aboutWindow.homepage 	"Home Page:">
+<!ENTITY aboutWindow.license 	"This extension is released under the GPL license. Please see source files for more details.">
+<!ENTITY aboutWindow.contributors "Contributors:">

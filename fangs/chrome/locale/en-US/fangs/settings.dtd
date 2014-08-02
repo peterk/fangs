@@ -1,0 +1,16 @@
+<!ENTITY settingsWindow.title 					"Fangs preferences">
+<!ENTITY settingsWindow.heading 				"Fangs preferences">
+<!ENTITY settingsWindow.output.style			"Output style">
+<!ENTITY settingsWindow.output.style.default	"Default (block of text)">
+<!ENTITY settingsWindow.output.style.sectioned	"Sectioned (line break before headers)">
+<!ENTITY settingsWindow.output.defaultlang		"Default renderer voice">
+
+<!-- Default renderer languages -->
+<!ENTITY settingsWindow.output.lang.en   		"English (en)">
+<!ENTITY settingsWindow.output.lang.sv   		"Swedish (sv)">
+<!ENTITY settingsWindow.output.lang.de   		"German (de)">
+<!ENTITY settingsWindow.output.lang.fr   		"French (fr)">
+<!ENTITY settingsWindow.output.lang.zh   		"Chinese (zh)">
+<!ENTITY settingsWindow.output.lang.cs   		"Czech (cs)">
+<!ENTITY settingsWindow.output.lang.ja   		"Japanese (ja)">
+<!ENTITY settingsWindow.output.lang.es   		"Spanish (es)">

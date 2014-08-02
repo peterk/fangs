@@ -1,0 +1,12 @@
+<!ENTITY mainWindow.title "Fangs">
+<!ENTITY mainWindow.outputfor "Fangs output for:">
+<!ENTITY mainWindow.btnReload "Reload">
+<!ENTITY mainWindow.btnPrefs "Preferences">
+<!ENTITY mainWindow.helptext "Help and tutorial">
+<!ENTITY mainWindow.subtitle "">
+<!ENTITY mainWindow.tab1 "Screen reader output">
+<!ENTITY mainWindow.tab1.title "Screen reader output">
+<!ENTITY mainWindow.tab2 "Headings list">
+<!ENTITY mainWindow.tab2.title "Headings list">
+<!ENTITY mainWindow.tab3 "Links list">
+<!ENTITY mainWindow.tab3.title "Links list">

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+ <?xml-stylesheet href="chrome://global/skin" type="text/css"?>
+ <!DOCTYPE window>
+ <window title="Fangs headings"
+	id="fangsheadingsouput"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+	style="background-color: grey;"
+	width="400"
+	height="300"
+	>
+	<script type="application/x-javascript" src="chrome://global/content/dialogOverlay.js" />	
+	<script type="application/x-javascript" src="chrome://fangs/content/fangs.js" />	
+	<groupbox style="background-color:#e1e1e1">
+		<hbox>
+			<vbox>
+				<hbox><description value="Fangs ouput for:" style="font-weight:bold"/><description id="sourceurl" value=""/></hbox>
+				<hbox>
+					<button label="Close" oncommand="ClearOutput();" />
+				</hbox>
+			</vbox>
+		</hbox>
+	</groupbox>
+</window>

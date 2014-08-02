@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet href="chrome://global/skin" type="text/css"?>
+<!DOCTYPE window SYSTEM "chrome://fangs/locale/fangs.dtd">
+<window title="&mainWindow.title;"
+    titlemodifier="&mainWindow.title;"
+    id="fangsouput"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+    style="background-color: #fff;"
+    width="600"
+    height="500"
+    persist="width height"
+    onload="tofangs();"
+    >
+    <stringbundleset id="bundle">
+        <stringbundle id="fangs-string-bundle" src="chrome://fangs/locale/fangs.properties" />
+    </stringbundleset>
+    <script type="application/x-javascript" src="chrome://global/content/XPCNativeWrapper.js"/>
+    <script type="application/x-javascript" src="chrome://fangs/content/fangsversion.js" />	
+    <script type="application/x-javascript" src="chrome://global/content/dialogOverlay.js" />	
+    <script type="application/x-javascript" src="chrome://fangs/content/prefutils.js"/>
+    <script type="application/x-javascript" src="chrome://fangs/content/fangs.js" />	
+    <groupbox style="background-color:#e1e1e1;">
+        <hbox>
+            <image onclick="window.openDialog('chrome://fangs/content/about.xul', 'aboutdlg', 'chrome')" src="chrome://fangs/skin/fangslogo_60.png" style="margin-left:5px;margin-right:10px;margin-bottom:5px;margin-top:5px" flex="0" align="left"/>
+            <vbox>
+                <hbox><description value="&mainWindow.outputfor;" style="font-weight:bold"/> <description id="sourceurl" value=""/></hbox>
+                <hbox>
+                    <button label="&mainWindow.btnReload;" oncommand="ReloadSource();" />
+                    <button label="&mainWindow.btnPrefs;" oncommand="window.openDialog('chrome://fangs/content/settings.xul', 'settingsdlg', 'chrome');" />
+                </hbox>
+                <description value="&mainWindow.subtitle;" style="font-weight:bold"/>
+            </vbox>
+            <spacer flex="1"/>
+            <description onclick="OpenHelpWin();" value="&mainWindow.helptext;" style="text-decoration:underline;margin-top:15px;color:#3333ff" align="right"/>
+            <image onclick="OpenHelpWin();" src="chrome://fangs/skin/helpbutton_60.png" style="margin-left:5px;margin-right:10px;margin-bottom:5px;margin-top:5px" flex="0" />		
+        </hbox>
+    </groupbox>
+    <tabbox style="margin-left:5px;margin-right:5px" flex="1">
+        <tabs>
+            <tab style="padding-left:5px;padding-right:5px" label="&mainWindow.tab1;"/>
+            <tab style="padding-left:5px;padding-right:5px" label="&mainWindow.tab2;"/>
+            <tab style="padding-left:5px;padding-right:5px" label="&mainWindow.tab3;"/>
+        </tabs>
+        <tabpanels style="border:none" flex="1">
+            <tabpanel flex="1" id="tb_ouput" >
+                <vbox flex="1">
+                    <description value="&mainWindow.tab1.title;" style="font-weight:bold"/>
+                    <iframe id="langstrings" style="visibility:collapse" type="content" src="chrome://fangs/content/lang.xul"/>
+                    <iframe id="fangsiframe" flex="1" type="content" src="chrome://fangs/content/fangsdef.htm"/>
+                </vbox>
+            </tabpanel>
+            <tabpanel flex="1" id="tb_headings" style="background-color:transparent">
+                <vbox flex="1">
+                    <description value="&mainWindow.tab2.title;" style="font-weight:bold"/>
+                    <listbox id="lbHeadings" flex="1"></listbox>
+                    <!--groupbox>
+                    <caption label="Sort Headings"/>
+                    <radio selected="true" id="h_taborder" label="In Tab Order"/>
+                    <radio id="h_alphabetically"  label="Alphabetically"/>
+                </groupbox>	
+                <groupbox>
+                    <caption label="Display"/>
+                    <hbox>
+                        <vbox>
+                            <radio id="h_all" selected="true" label="All Headings"/>
+                            <radio id="h_level1" label="Level1 Headings"/>
+                            <radio id="h_level2" label="Level2 Headings"/>
+                            <radio id="h_level3" label="Level3 Headings"/>
+                        </vbox>
+                        <vbox>
+                            <radio id="h_level4" label="Level4 Headings"/>
+                            <radio id="h_level5" label="Level5 Headings"/>
+                            <radio id="h_level6" label="Level6 Headings"/>
+                        </vbox>					
+                    </hbox>
+                </groupbox-->				
+            </vbox>
+        </tabpanel>
+        <tabpanel flex="1" id="tb_links" style="background-color:transparent">
+            <vbox flex="1">
+                <description value="&mainWindow.tab3.title;" style="font-weight:bold"/>
+                <listbox id="lbLinks" flex="1"></listbox>
+                <!--hbox>
+                    <groupbox>
+                        <caption label="Display"/>
+                        <radio id="l_all" selected="true" label="All Links"/>
+                        <radio id="l_visited" label="Visited Links Only"/>
+                        <radio id="l_unvisited" label="Unvisited Links"/>
+                    </groupbox>
+                    <groupbox>
+                        <caption label="Sort Links"/>
+                        <radio selected="true" id="l_taborder" label="In Tab Order"/>
+                        <radio id="l_alphabetically"  label="Alphabetically"/>
+                    </groupbox>					
+                </hbox-->
+            </vbox>
+        </tabpanel>		
+    </tabpanels>
+</tabbox>	
+</window>

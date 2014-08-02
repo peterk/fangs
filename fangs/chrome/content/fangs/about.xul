@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<!DOCTYPE window SYSTEM "chrome://fangs/locale/about.dtd">
+<window class="dialog"
+	title="&aboutWindow.title;"
+	orient="vertical"
+	autostretch="always"
+	onload="sizeToContent();setver();"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<script type="application/x-javascript" src="chrome://fangs/content/fangsversion.js" />
+<script type="application/x-javascript">
+	function setver()
+	{
+		eVer = document.getElementById("version");
+		if(eVer)
+		{
+			eVer.setAttribute("value", fangsversion);
+		}
+	}
+</script>	
+<groupbox align="center" orient="horizontal">
+<vbox>
+  <text value="Fangs" style="font-weight: bold; font-size: large;"/><image src="chrome://fangs/skin/paypal.gif" onclick="window.open('http://sourceforge.net/donate/index.php?group_id=124764'); window.close();"/>
+  <text id="version" value=""/>
+  <separator class="thin"/>
+  <text value="&aboutWindow.createdby;" style="font-weight: bold;"/>
+  <text value="Peter Krantz" class="url"
+        onclick="window.open('http://www.standards-schmandards.com'); window.close();"/>
+  <separator class="thin"/>
+    <text value="&aboutWindow.homepage;" style="font-weight: bold;"/>
+    <text value="http://www.standards-schmandards.com/projects/fangs/"
+          class="url"
+        onclick="window.open('http://www.standards-schmandards.com/projects/fangs/'); window.close();"/>
+  <separator class="thin"/>
+    <text value="&aboutWindow.license;"/>
+  <separator class="thin"/>
+	<text value="&aboutWindow.contributors;" style="font-weight: bold;"/>
+	<text value="Simon Carney"/>
+	<text value="Jeanne Spellman"/>
+</vbox>
+<spring flex="1"/>
+<image src="chrome://fangs/skin/fangslogo_32.png"/>
+</groupbox>
+
+  <hbox>
+  <spacer flex="1"/>
+   <button label="Close" oncommand="window.close();"/>
+  </hbox>
+
+</window>

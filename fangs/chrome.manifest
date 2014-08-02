@@ -1,0 +1,4 @@
+content fangs		        chrome/content/fangs/
+locale  fangs en-US       	chrome/locale/en-US/fangs/
+skin    fangs classic/1.0 	chrome/skin/classic/fangs/
+overlay chrome://browser/content/browser.xul		chrome://fangs/content/fangsOverlay.xul

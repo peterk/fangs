@@ -1,0 +1,16 @@
+<!ENTITY settingsWindow.title 					"Fangs inställningar">
+<!ENTITY settingsWindow.heading 				"Fangs inställningar">
+<!ENTITY settingsWindow.output.style			"Stilmall">
+<!ENTITY settingsWindow.output.style.default	"Standard (all text i följd)">
+<!ENTITY settingsWindow.output.style.sectioned	"Sektionsindelad (Ny sektion för varje rubrik)">
+<!ENTITY settingsWindow.output.defaultlang		"Standardröstens språk">
+
+<!-- Default renderer languages -->
+<!ENTITY settingsWindow.output.lang.en   		"Engelska (en)">
+<!ENTITY settingsWindow.output.lang.sv   		"Svenska (sv)">
+<!ENTITY settingsWindow.output.lang.de   		"Tyska (de)">
+<!ENTITY settingsWindow.output.lang.fr   		"Franska (fr)">
+<!ENTITY settingsWindow.output.lang.zh   		"Kinesiska (zh)">
+<!ENTITY settingsWindow.output.lang.cs   		"Tjeckiska (cs)">
+<!ENTITY settingsWindow.output.lang.ja   		"Japanska (ja)">
+<!ENTITY settingsWindow.output.lang.es   		"Spanska (es)">

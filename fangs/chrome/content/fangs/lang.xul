@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<!DOCTYPE window SYSTEM "chrome://fangs/locale/about.dtd">
+<window class="dialog"
+	title="Fangs renderer text data"
+	orient="vertical"
+	id="winobj" 
+	style="background-color: white;"
+	width="1"
+	height="1"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+	<script type="application/x-javascript" src="chrome://global/content/XPCNativeWrapper.js"/>	
+<vbox>
+	<description style="font-weight:bold;font-size:120%;margin-bottom:10px">Strings used by the Fangs renderer. Please see source for more details.</description>
+	
+	<!-- 	This file contains string constants used by the renderer. The renderer
+			looks at the lang attribute of html elements and renders the content in
+			the specified language. This has nothing to do with the browser locale
+			(localization of the extension itself is done in the dtd files in the
+			locale directory).
+			
+			Currently Fangs is started in English as default.
+			
+			Strings are fetched by the getString method in fangs.js.
+	-->
+	
+	
+	<!-- Page intro -->
+	<!-- English (en) -->
+	<description id="anPagePart1_en">Page has</description>
+	<description id="anPagePart2_en">and</description>
+	<description id="anPageFrameOne_en">frame</description>
+	<description id="anPageFrame_en">frames</description>
+	<description id="anPageHeading_en">headings</description>
+	<description id="anPageHeadingOne_en">heading</description>
+	<description id="anPageLinkOne_en">link</description>
+	<description id="anPageLink_en">links</description>
+	<description id="anPageLinkNone_en">and no links</description>
+	
+	<!-- French (fr) -->
+	<description id="anPagePart1_fr">La page contient</description>
+	<description id="anPagePart2_fr">et</description>
+	<description id="anPageFrameOne_fr">cadre</description>
+	<description id="anPageFrame_fr">cadres</description>
+	<description id="anPageHeading_fr">titres</description>
+	<description id="anPageHeadingOne_fr">titre</description>
+	<description id="anPageLinkOne_fr">lien</description>
+	<description id="anPageLink_fr">liens</description>
+	<description id="anPageLinkNone_fr">et aucun lien</description>
+
+
+	<!-- Heading strings -->
+	<!-- English (en) -->
+	<description id="anHeading1_en">Heading level one</description>
+	<description id="anHeading2_en">Heading level two</description>
+	<description id="anHeading3_en">Heading level three</description>
+	<description id="anHeading4_en">Heading level four</description>
+	<description id="anHeading5_en">Heading level five</description>
+	<description id="anHeading6_en">Heading level six</description>
+
+	<!-- French (fr) -->
+	<description id="anHeading1_fr">Titre de niveau un</description>
+	<description id="anHeading2_fr">Titre de niveau deux</description>
+	<description id="anHeading3_fr">Titre de niveau trois</description>
+	<description id="anHeading4_fr">Titre de niveau quatre</description>
+	<description id="anHeading5_fr">Titre de niveau cinq</description>
+	<description id="anHeading6_fr">Titre de niveau six</description>
+
+	
+	
+	<!-- Table strings -->
+	<!-- English (en) -->
+	<description id="anTablePart1_en">Table with</description>
+	<description id="anTableCol_en">columns</description>
+	<description id="anTableColOne_en">column</description>
+	<description id="anTablePart2_en">and</description>
+	<description id="anTableRow_en">rows</description>
+	<description id="anTableRowOne_en">row</description>
+	<description id="anTablePart3_en"></description>
+	<description id="anTableCaption_en">Table caption colon</description>
+	<description id="anTableSummary_en">Summary colon</description>
+	<description id="anTableEnd_en">Table end</description>
+	
+	<!-- French (fr) -->
+	<description id="anTablePart1_fr">Tableau avec</description>
+	<description id="anTableCol_fr">colonnes</description>
+	<description id="anTableColOne_fr">colonne</description>
+	<description id="anTablePart2_fr">et</description>
+	<description id="anTableRow_fr">lignes</description>
+	<description id="anTableRowOne_fr">ligne</description>
+	<description id="anTablePart3_fr"></description>
+	<description id="anTableCaption_fr">Légende du tableau deux-points</description>
+	<description id="anTableSummary_fr">Résumé du tabelau deux-points</description>
+	<description id="anTableEnd_fr">Fin du tableau</description>
+	
+	
+	
+	<!-- List strings -->
+	<!-- English (en) -->
+	<description id="anList_en">List of %x items</description>
+	<description id="anListOne_en">List of one item</description>
+	<description id="anListBullet_en">bullet</description>
+	<description id="anDefList_en">Definition list of %x items</description>
+	<description id="anDefListOne_en">Definition list of one item</description>	
+	<description id="anDefListEquals_en">equals</description>	
+	<description id="anListEnd_en">List end</description>	
+	
+	<!-- French (fr) -->
+	<description id="anList_fr">Liste de %x éléments</description>
+	<description id="anListOne_fr">Liste de un éléments</description>
+	<description id="anListBullet_fr">puce</description>
+	<description id="anDefList_fr">Liste de définition de %x éléments</description>
+	<description id="anDefListOne_fr">Liste de définition de un élément</description>	
+	<description id="anDefListEquals_fr">égale</description>	
+	<description id="anListEnd_fr">Fin de liste</description>	
+	
+	
+	
+	<!-- Frames strings -->
+	<!-- English (en) -->
+	<description id="anFrame_en">Frame</description>
+	<description id="anFrameTitle_en"> title </description>
+	<description id="anFrameEnd_en">frame end</description>
+	<description id="anFrameEndNoTitle_en">Frame end</description>
+	
+	<!-- French (fr) -->
+	<description id="anFrame_fr">Cadre</description>
+	<description id="anFrameTitle_fr"> titre </description>
+	<description id="anFrameEnd_fr">fin du cadre</description>
+	<description id="anFrameEndNoTitle_fr">Fin du cadre</description>
+	
+	
+	
+	
+	<!-- Image strings -->
+	<!-- English (en) -->
+	<description id="anImage_en">Graphic</description>
+	
+	<!-- French (fr) -->
+	<description id="anImage_fr">Graphique</description>
+	
+	
+	
+	<!-- Form element strings -->
+	<!-- English (en) -->
+	<description id="anComboBox_en">Combo box</description>
+	<description id="anCheckbox_en">Checkbox</description>
+	<description id="anChecked_en">Checked</description>
+	<description id="anNotChecked_en">Not checked</description>
+	<description id="anRadioBtn_en">Radio button</description>
+	<description id="anEdit_en">Edit</description>
+	<description id="anSubmitBtn_en">button</description>
+	<description id="anFormBtn_en">button</description>
+	<description id="anFileUploadField_en">File upload edit</description>
+	<description id="anBrowseBtn_en">Browse button</description>
+	<description id="anTextBox_en">Edit</description>
+
+	<!-- French (fr) -->
+	<description id="anComboBox_fr">Zone de liste déroulante</description>
+	<description id="anCheckbox_fr">Case à cocher</description>
+	<description id="anChecked_fr">Cochée</description>
+	<description id="anNotChecked_fr">Non cochée</description>
+	<description id="anRadioBtn_fr">Bouton radio</description>
+	<description id="anEdit_fr">Édition</description>
+	<description id="anSubmitBtn_fr">bouton</description>
+	<description id="anFormBtn_fr">bouton</description>
+	<description id="anFileUploadField_fr">Édition de l'envoi du fichier</description>
+	<description id="anBrowseBtn_fr">Parcourir bouton</description>
+	<description id="anTextBox_fr">Édition</description>
+
+	
+	
+	<!-- Characters -->
+	
+	
+	
+	<!-- Links -->
+	<!-- English (en) -->
+	<description id="anThisPageLink_en">This page link</description>
+	<description id="anLink_en">Link</description>
+	
+	<!-- French (fr) -->
+	<description id="anThisPageLink_fr">Lien même page</description>
+	<description id="anLink_fr">Lien</description>
+	
+	
+	<!-- Quotes -->
+	<!-- English (en) -->
+	<description id="anBlockQuoteStart_en">Block quote start</description>
+	<description id="anBlockQuoteEnd_en">Block quote end</description>
+
+	<!-- French (fr) -->
+	<description id="anBlockQuoteStart_fr">Citation</description>
+	<description id="anBlockQuoteEnd_fr">Fin de la citation</description>
+	
+
+</vbox>
+</window>

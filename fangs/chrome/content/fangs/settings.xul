@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<!DOCTYPE dialog SYSTEM "chrome://fangs/locale/settings.dtd">
+<dialog xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+      onload="sizeToContent();initSettings();"
+      ondialogaccept="setOptions();"
+      id="fangssettings"
+      title="&settingsWindow.title;">
+
+	<script type="application/x-javascript">
+		<![CDATA[	
+			
+			//Set initial values
+			function initSettings()
+			{			
+				var prefs = new PrefsWrapper1("extensions.fangs.");
+				
+				//Output style
+				if(prefs.getUnicharPref("output.style"))
+				{
+					document.getElementById("fangs.output.style").value = prefs.getUnicharPref("output.style");
+				}
+				
+				//Renderer "voice" default lang
+				if(prefs.getUnicharPref("output.defaultlang"))
+				{
+					document.getElementById("fangs.output.defaultlang").value = prefs.getUnicharPref("output.defaultlang");
+				}				
+				
+				return;			
+			}
+			
+			//Set options when exiting the dialog
+			function setOptions()
+			{
+				var prefs = new PrefsWrapper1("extensions.fangs.");
+
+				prefs.setUnicharPref("output.style", document.getElementById("fangs.output.style").value);
+				prefs.setUnicharPref("output.defaultlang", document.getElementById("fangs.output.defaultlang").value);
+				
+				//Call reload of parent window (if it exists)
+				if(parent.Reload)
+				{
+					parent.Reload();
+				}
+				
+				return;
+			}
+				
+		]]>
+	</script>
+	<script type="application/x-javascript" src="chrome://fangs/content/prefutils.js"/>	
+	<groupbox align="center" orient="horizontal">
+		<vbox>
+			<text value="&settingsWindow.heading;" style="font-weight: bold; font-size: large;"/>
+			<separator class="thin"/>
+			<hbox align="center">
+				<label value="&settingsWindow.output.style;" control="fangs.output.style"/>
+				<menulist id="fangs.output.style">
+					<menupopup>
+						<menuitem label="&settingsWindow.output.style.default;" value="default"/>
+						<menuitem label="&settingsWindow.output.style.sectioned;" value="sectioned"/>
+					</menupopup>
+				</menulist>
+			</hbox>
+		  <separator class="thin"/>
+			<hbox align="center">
+				<label value="&settingsWindow.output.defaultlang;" control="fangs.output.defaultlang"/>
+				<menulist id="fangs.output.defaultlang">
+					<menupopup>
+						<menuitem label="&settingsWindow.output.lang.en;" value="en"/>
+						<menuitem label="&settingsWindow.output.lang.sv;" value="sv"/>
+						<menuitem label="&settingsWindow.output.lang.de;" value="de"/>
+						<menuitem label="&settingsWindow.output.lang.fr;" value="fr"/>
+						<menuitem label="&settingsWindow.output.lang.zh;" value="zh"/>
+						<menuitem label="&settingsWindow.output.lang.cs;" value="cs"/>
+						<menuitem label="&settingsWindow.output.lang.ja;" value="ja"/>
+						<menuitem label="&settingsWindow.output.lang.es;" value="es"/>
+					</menupopup>
+				</menulist>
+			</hbox>    
+		</vbox>
+	</groupbox>
+</dialog>
