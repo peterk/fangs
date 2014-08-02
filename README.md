@@ -7,7 +7,6 @@ Please note that Fangs is not an assistive tool itself.
 
 Fangs was developed in 2004 and the code is still pretty much the same. During this time screen reader software has become a lot better. This means that you should test with a real tool such as Jaws, NVDA or VoiceOver to get a better picture of how your web application behaves.
 
-
 Building the extension
 ----------------------
 
@@ -18,3 +17,4 @@ Contributing
 ------------
 
 Adding new languages involves translating the fangs/chrome/content/fangs/lang.xul file (see lang.fr.xul for an example translation) as well as text to number functions in script.
+
